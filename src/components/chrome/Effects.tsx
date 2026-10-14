@@ -9,7 +9,8 @@
      data-draw         svg strokes (pathLength=1) draw themselves
      data-count="n"    the number counts up
      data-scrub-words  words of a paragraph light up as it is read
-     data-grow="x|y"   a line grows with the scroll through its parent                                                  */
+     data-grow="x|y"   a line grows with the scroll through its parent
+     data-line         a hairline draws itself from the left, once, as it comes into view                                                  */
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
@@ -61,6 +62,9 @@ export default function Effects() {
         gsap.utils.toArray<HTMLElement>("[data-grow]").forEach((el) => {
           const y = el.dataset.grow === "y";
           gsap.fromTo(el, { [y ? "scaleY" : "scaleX"]: 0 }, { [y ? "scaleY" : "scaleX"]: 1, ease: "none", scrollTrigger: { trigger: el.parentElement!, start: y ? "top 70%" : "top 80%", end: y ? "bottom 60%" : "bottom 50%", scrub: true } });
+        });
+        gsap.utils.toArray<HTMLElement>("[data-line]").forEach((el, i) => {
+          gsap.fromTo(el, { scaleX: 0 }, { scaleX: 1, duration: 1.8, ease: "expo.inOut", delay: (i % 4) * 0.12, scrollTrigger: st(el, "top 92%") });
         });
         gsap.utils.toArray<HTMLElement>("[data-count]").forEach((el) => {
           const to = +(el.dataset.count || 0), o = { v: 0 };

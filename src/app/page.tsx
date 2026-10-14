@@ -17,10 +17,10 @@ const STATEMENT =
   "Established in Thanjavur, the Chola capital and rice bowl of Tamil Nadu, Abi's Hotel Group brings together three distinct stays, united by one ancient Tamil idea: ~Virunthombal,~ treating every guest as an honoured relative.";
 
 const STATS = [
-  { n: 3, label: "Distinct hotels in Thanjavur" },
+  { n: 3, label: "Distinct hotels across Thanjavur" },
   { n: 2012, label: "The year we first opened our doors", plain: true },
-  { n: 250, sup: "+", label: "Guests in a single banquet" },
-  { n: 2, label: "UNESCO Chola temples within reach" },
+  { n: 250, plus: true, label: "Guests in a single banquet hall" },
+  { n: 2, label: "UNESCO Chola temples within easy reach" },
 ];
 
 const YEARS = [
@@ -53,14 +53,18 @@ export default function Home() {
               })}
             </p>
             <div style={{ marginTop: 40 }} data-reveal><Link href="/about-us/" className="link">About us <Arrow /></Link></div>
-            <div className="stats" data-stagger>
+            <ul className="stats" aria-label="Abi's Hotel Group in numbers" data-stagger>
               {STATS.map((s) => (
-                <div key={s.label} className="stat">
-                  <b>{s.plain ? s.n : <span data-count={s.n}>0</span>}{s.sup && <sup>{s.sup}</sup>}</b>
-                  <span>{s.label}</span>
-                </div>
+                <li key={s.label} className="stat">
+                  <span className="stat__line" aria-hidden="true" data-line />
+                  <b className="stat__num">
+                    {s.plain ? s.n : <span data-count={s.n}>{s.n}</span>}
+                    {s.plus && <span className="stat__plus" aria-label="or more">+</span>}
+                  </b>
+                  <span className="stat__label">{s.label}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 

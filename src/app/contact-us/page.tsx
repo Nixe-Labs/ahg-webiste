@@ -27,16 +27,16 @@ export default function Contact() {
           <div className="wrap grid-2" style={{ alignItems: "start" }}>
             <div data-reveal><ContactForm /></div>
             <div style={{ display: "grid", gap: 28 }}>
-              <div className="card" data-reveal style={{ background: "var(--color-night)", color: "var(--color-ivory)" }}>
-                <span className="tag" style={{ color: "var(--color-gold-hi)" }}>Abi&rsquo;s Hotel Group</span>
+              <div className="card card--night" data-reveal>
+                <span className="tag">Abi&rsquo;s Hotel Group</span>
                 <h3>Head office</h3>
                 <ul>
-                  <li style={{ ...row, color: "rgba(246,240,229,.8)" }}><Pin className="w-5 h-5 shrink-0" />{GROUP.address}</li>
-                  <li style={{ ...row, color: "rgba(246,240,229,.8)" }}><Phone className="w-5 h-5 shrink-0" /><a href={tel(GROUP.phone)}>{GROUP.phone}</a></li>
-                  <li style={{ ...row, color: "rgba(246,240,229,.8)" }}><Mail className="w-5 h-5 shrink-0" /><a href={`mailto:${GROUP.email}`}>{GROUP.email}</a></li>
+                  <li style={row}><Pin className="w-5 h-5 shrink-0" />{GROUP.address}</li>
+                  <li style={row}><Phone className="w-5 h-5 shrink-0" /><a href={tel(GROUP.phone)}>{GROUP.phone}</a></li>
+                  <li style={row}><Mail className="w-5 h-5 shrink-0" /><a href={`mailto:${GROUP.email}`}>{GROUP.email}</a></li>
                 </ul>
               </div>
-              <div className="cards" data-stagger style={{ gridTemplateColumns: "1fr" }}>
+              <div className="cards" data-stagger>
                 {HOTELS.map((h) => (
                   <div key={h.slug} className="card">
                     <span className="tag">{h.tier}</span>
