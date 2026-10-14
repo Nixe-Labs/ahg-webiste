@@ -4,7 +4,8 @@
    where it lies. Illustrative, not to scale. */
 import { useState } from "react";
 import { PLACES } from "@/lib/content";
-import { place } from "@/lib/img";
+import { placeSrc } from "@/lib/img";
+import Img from "@/components/fx/Img";
 import FanMark from "@/components/brand/FanMark";
 
 const HOME = { x: 40, y: 52 };
@@ -61,7 +62,7 @@ export default function RegionMap() {
 
       {a && (
         <div className="map__card is-on" style={{ ...pct(a.x! > 60 ? a.x! - 30 : a.x! + 3, Math.min(a.y! + 3, 60)) }}>
-          <img src={place(a.image)} alt="" />
+          <Img src={placeSrc(a.image)} sizes="320px" loading="eager" />
           <div><h4>{a.name}</h4><p>{a.text}</p></div>
         </div>
       )}

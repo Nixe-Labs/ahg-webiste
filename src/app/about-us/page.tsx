@@ -5,7 +5,7 @@ import Footer from "@/components/chrome/Footer";
 import Kolam from "@/components/brand/Kolam";
 import { Arrow } from "@/components/brand/Icons";
 import { HOTELS } from "@/lib/hotels";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "About Us", description: "Founded to redefine hospitality in Thanjavur, Abi's Hotel Group brings Abi's Inn, Abi's Residency and The Emerald together around one belief: make every guest feel at home, always." };
 
@@ -23,7 +23,7 @@ export default function About() {
         </section>
 
         <section className="frame" style={{ height: "80svh", minHeight: 480 }}>
-          <img data-parallax="10" src={img("/img/inn/atrium.jpg")} alt="The hand-painted Tanjore-art column rising through the atrium of Abi's Inn" style={{ height: "125%", marginTop: "-12%", objectFit: "cover", width: "100%" }} />
+          <Img data-parallax="10" src="/img/inn/atrium.jpg" alt="The hand-painted Tanjore-art column rising through the atrium of Abi's Inn" style={{ height: "125%", marginTop: "-12%", objectFit: "cover", width: "100%" }} />
         </section>
 
         <section className="section">
@@ -41,7 +41,7 @@ export default function About() {
           <div className="wrap siblings siblings--3" style={{ marginTop: 80 }} data-stagger>
             {HOTELS.map((h) => (
               <Link key={h.slug} href={`/${h.slug}/`} className="sib" data-cursor="view" style={{ aspectRatio: "4/5" }}>
-                <img src={img(h.card)} alt="" loading="lazy" />
+                <Img src={h.card} sizes="(min-width: 800px) 33vw, 100vw" />
                 <div><span className="kicker" style={{ color: "var(--color-gold-hi)", margin: 0 }}>Since {h.since}</span><h3>{h.name}</h3></div>
               </Link>
             ))}

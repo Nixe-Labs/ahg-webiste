@@ -1,0 +1,656 @@
+{
+ "/img/emerald/hero": {
+  "w": 3840,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400,
+   3200,
+   3840
+  ],
+  "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JZQC7BagBlDEFT7+iOuIGugbQAP7XDDcsq5GryV5Wh2QviuSdXBz4AanGcYHPrE9QPwDBsD2PTbnWd0tmCdUAuroGv79YNbNAfHSXFjUvFR8+fDVyBNvkR1/pmUU1jo0Key+mgFkx1d+3M66fEIt/AAA="
+ },
+ "/img/emerald/room-1": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBQCdASoYABgAPu1kqU2ppaOiMAgBMB2JQBOmZDBsA+36x6sAAdz63ec19NFJwCSvSOR2VdzUAAD+1GiulC6N7ghaEwY+tMMEN8NBa5Bp4/nngo6hKuCz0B86tRpmqL95cKS8H8YwBVQAle+MRvUjaLXSwRQYZCh5+38/mVN1ba3ccENTsTIQehlfWmbenVZbZZra+F/scdgxJqApitSnbPaK3O8h0EtCo1MHdlLIAA=="
+ },
+ "/img/emerald/room-10": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAABQBQCdASoYABgAPu1wsFKppiSiqAgBMB2JQBUegieIEMU2z3Z6psRm7nowMZMb8HIyegAA/udPt/CmScAF12YWrotcCJHYIF/SLEOd7tDWuJ52vnVDJ/kXmTUvKkQj+lESzcTL6p2+f3WB2RPEoXIEzZQh3O1k02IIAgR6+yTG9NLLkQS8U8xmuoxiZbJzlSVcwFFsEkjn1osmkAafnVXcPLzvzdce41y6+nB+NQEsQvlxRkKENeTC8srO9dnPrhYN4GIY1AAAAA=="
+ },
+ "/img/emerald/room-11": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBQCdASoYABgAPu1qrVEppaQiqAqpMB2JZwDBzBIvr7nxqXV6cH2P+/qFmwpyC7OAAPZEINjT4vfUX9C0k+ROxS8TeSTTcIFoJbkELLlBGaTiA7pal7juGbgct+a52ZAQwEuQPiscDoHMKjBEcqDr2vxkVhwoicmADpBsOTaWJ3d0GrigDzIcRHSaIXjYvqiosC40JpQF34MwAAA="
+ },
+ "/img/emerald/room-12": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAADQBQCdASoYABgAPu1oqk6ppiQiKA1RMB2JYwC7M47BqEOWYcD55wP5DIkpC+RcqnkcWBb9+YWAAP6vDjVMdyvdpFRVtue450cFm5We+eLutEPZEYdv9G0JD9ZBhiQmnwfNUVsCs0clx9pTigPNQUZfGNJ9FGxaydYji8F/cfWWQQ8Jd4dQKN+1FiVYstkVSP4xtF5yHT0bs6rgzOtHjenIXh8pvc6jqYsr00jCBiaG1GAA"
+ },
+ "/img/emerald/room-13": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBQCdASoYABgAPu1gq1AppSOisBgIATAdiWUAriGvgKgFL2+GwQ83XwwMXmvecPMPW4AA/sV3wbj8QHyiFU4JEmddKONTdGuaugwxXr6MJUVst6bu8QrVqj0+6E2hBb4HpJ0fpky6C3PnfftlWjOyr0SFs9RoKixqlInrYULOViuKFuzCpvE1p8z+VQIT50N/M1u+iKahJmZxNErGyvXdjpRwXOPQyV1aioAA"
+ },
+ "/img/emerald/room-14": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACQBACdASoYABgAPuVgo02pJaMiMAwBIByJYwC/7BkP0hKLn4dunxEGdNVg0sAA/gLwcrKISgKhrWXTK2UtxI6zrFRF5NCvzA2BgbW0mnAWripaMFvcrEJZrMi+VdgxnZXiMOfkB8ALTAnSdnTY9pJDuW+P1xj+XFgoqVLVS1WERWO/Wr2B2mstwTd4A95k90uy22eU09HTyAAA"
+ },
+ "/img/emerald/room-15": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBQCdASoYABgAPu1wr1KppiQiqAgBMB2JZQDDcA9keb40XsJ1XwT3KYRft6OgvJ2lgAD+k5B6OJVkQtNjSHEgyTnMwXLlS0P7Tvr4ORwxf2+SpBgu7jjo0/e6u7XM4/nInm0GjfK+szCxu5q1M9BV4GaPx7GPnU7pkmuk6uZKsG2RzaYN/q97pUqkzRzhFOmomyWg/AeVLNObt6lOF4QVqWsW8wfv4AA="
+ },
+ "/img/emerald/room-2": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASoYABgAPu1sqlEppaOiqAqpMB2JQBdmWYAt+8uvMuXtBqGsCWCXpJxSWaKzKZwoAP7I5e8KaSSl3GRekilgEh6kqELD8+J7l9v4cHGiEUacMPuj5bOy6r+eGwxMu+YcQ0VHz+fjlI2WSFI9WCmhvTmTfLNERvIDsObJ/C4zAQVJHqqbCZHzOX2HJUGmhiM/CGOkeizpOa0FJTcUXgFvQ+8K5gWaNaiYAAA="
+ },
+ "/img/emerald/room-3": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACwBACdASoYABgAPu1mqk4ppaQiMAgBMB2JQBadAzpn/2gVC3km0Nbtv7yMyB9gAP6z80gHjiFHXMKKOf2i0o5791CQAezoB01771vjf3Fw7hHHYuXJG8RJp6qqQhvnKaPKdcpKr0ESAMv9zMXmyPH5zDbtMbwDwlzsDRfTclNihcajOWDTLJ1x8qZlkNk2Ibpu75OpuTfd4/Yc+pOsOLpkKShAp2AAAAA="
+ },
+ "/img/emerald/room-4": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASoYABgAPu1or1CppaQiqAqpMB2JZQCxH3JBf05izu+XR4HLH2Bf2mzZ+OZMQkAAAP6M6bayDxJewkoOb7A263wsbKpkS0IXUrmvYEu/qcpiQv6+X1fxWPOkrMOVfjrVxr4C+gdcB0/ALigdjn1u4M+WTg3/y5pkdoyoR2o/2bzc4NsPSbNZFWTXj+RUjrQOd0kbSHjpdis1zjwbpcVgSG19WmoduTLgAAA="
+ },
+ "/img/emerald/room-5": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAADQBACdASoYABgAPu1sqlEppaOiqAqpMB2JZQC7AA913HwvOOCekJb0cIm30W5bgAD2Oo90JaAj8q1k2rTeDkyV7UUJDq2HfCO1iwS4cHK5baj/Lijo08UM4ZTdsHuHECG1bS4upQwZxpbq82pEyBOfiwpfaUIerORGl2DYPdgYwr5p1B2++3s2jr86aPv7wLZgFncK1AOlOrVDrToENpc1UB0f5F6+3YVFPrkpkhP+Qr4ZNE9AAA=="
+ },
+ "/img/emerald/room-6": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBQCdASoYABgAPuFeqE2opSQiMAwBEBwJYwDGfB6P2o8dsX5X60M09IDB3t4Y++GxAAD+r2yb4HPhYlE9RTJDhYQZekojhYji5SBl/315/3xilT8YjADlCp+TmBFeDsRgQF64rMfUNVoXb12ck0wTJXbZVv48xeLkz6/z0WcaXy218SdgiUd67mlaVWzJeKTGOjl+EsCVy4MoJ4IAAA=="
+ },
+ "/img/emerald/room-7": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBQCdASoYABgAPu1qsFAppaSiqAqpMB2JYwC7MyGBYwJcXC1H5u2drFUWWIwPy0FWjBLAAP7Utli3fVh1P8oukbOXCe/vfNw7tt9HBU9JyfJtHui1ogN+0gzoKzIf4xV9YPL95motxOcQpuJjtBeby4wZCIslpRLwYg6vE5qVxf0NYyILyBGz0i5Yks8BdXJU7+TFr7oxXHojk3qSjEuA1RUUxoEaQO0PeBsbqNUyd1ROAAA="
+ },
+ "/img/emerald/room-8": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABwBQCdASoYABgAPu1srlKppaQiqAgBMB2JYwDKAA9Z/Mr2DsKRSSFgfLKFS0cKU8YiHdSAAPVj+5/3kku15VpbNjhQ+Ib13AwNQ7EZXRGFSKmzu45H0yz2ap1tm6S7GyjvrR+Ig8ZAmUtJ6INXF4f7CClwcRMZgMK4Xiit7u8RccrYfWc5AXxEUymj9uFnIW6Vzh6fn813AoJltnkPYBiDItEpiFxuFRto97Cp6Aj0hrRE+ycFqiGAAAA="
+ },
+ "/img/emerald/room-9": {
+  "w": 2400,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBQCdASoYABgAPu1oqU8ppiOiKA1RMB2JYwC3uEI5C6l/0Y7xKAplK6OnXWn51aS0DwAA/ozpiaCZd0nk17FfSRfMtCHQvyrULOBJSf/iTHm9uCdqv1eKXj1hQLYtjd8G/Y2gG2uCKRikHdT+qexpiLWpVdTQIhWCQYHzYkMCJ2vGr6Pmh7x7+pBSmlfNVHQIG3L4U5dA4QBduuEvWHl5kOAAAA=="
+ },
+ "/img/explore/7d-theatre": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAATvaYuUj/zsACrdLIAP7o7+uNDGuCmDhHxpRZvKd05S9rA67LXXYghQFIU4tGu6ABph1Lr0Y5VAYPvGMErT/ZXq45qUZBP8i0/w3NxTdl4Vu3xDgwNpRpuhoQPkKYRAAA"
+ },
+ "/img/explore/brihadeeswarar": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdAYvMz5GAbT5zSxG3d4VoqAAAxnGe1KkLhJPxLg8U/FsdZgsyN/jZACwn0Ne/0gTLytKlSqTzQciegLNFEDlyQEx6zqjCBnxuXWxdx3MGS24mL+xbFmxz8yHWH70DDz8K9x39Db0vlNddMkUezYyFB93ytBaXKLknmzADrKeOoAAAAA=="
+ },
+ "/img/explore/brihadeeswarar-portrait": {
+  "w": 2400,
+  "h": 3600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JbACdMoACSOUXuuE3DcAAxCaV3/mmv8ac9lUzzLH0lCv1wOA4ctwAAdNAL15MRa/VFftZJLBFysgf02JBLk14dGdlTTtDsOuWu21qnn4NKXmMPLnfui3193TtXUptUfmlFDwAHgAAAA=="
+ },
+ "/img/explore/brihadeeswarar-wide": {
+  "w": 3840,
+  "h": 2400,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400,
+   3200,
+   3840
+  ],
+  "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoYAA8APu1iqU2ppaOiMAgBMB2JbACdMoGv/gPGFa3DvEdVT1q3AAD+IqToCg8YAmmt9WKExBQkVp+Za7YGu0j/CKEw9iEnW5bFqe5wrS+dfI+DfpqSXWQXBN/vfBGicWpmJQx8FjQ0/iyK46gr6faCfJWFtUC9gAA="
+ },
+ "/img/explore/clock-tower": {
+  "w": 2400,
+  "h": 1590,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQAAWrCB4x8P9h1hoJfQEnIA/uc6HGkLYlV4FWoNhDMp5VjVeoXWo65q23kC2ol31CUkKidLDTzlc32bzMOZmJmVzJt/lGvrDazOsCYkgU+5qwAAAA=="
+ },
+ "/img/explore/darasuram": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYgCdK78Aja3kQV/HN2QCQAD33YE5qukM9bj1TPd3jTHIhLoknaSEqrklPQqtmNjnFdW9NsYfpDWrGpKX0XIH6F+O/Kpt/OEq3NjmKC+baPOqRXo7Y4+Fn2FvB1zZ2CBPA4Ngqrb4AA=="
+ },
+ "/img/explore/food-museum": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoADJ6VbTiEBtWIpW9eAcTgAAP35JIA+cKzuD0ksA1EgAbzR0orZn1TRyEPrenVFaXOk0lqXoJkAP7c9Lq4cMw8k1kogdjJ4Z33CuK0efo9ALiUeC29t3/KXtTyUKNng9U6YPgdVb8OKCujqCHC59D/InZMNMcfBCJTVAHe6DWMAAA=="
+ },
+ "/img/explore/kallanai-dam": {
+  "w": 3840,
+  "h": 2563,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400,
+   3200,
+   3840
+  ],
+  "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdABxo1t/cfJLrQtKy9UAA3cgeNJ2HCDVMDVi6F6X5yhcnZJwD1tnZ2JCrofPs3FhM/eWiRquytj6IaCq1u9IdTtjqfqIzwrfj57yrAg8j/esNczWZHPnoKEOoLlsWuPQaTSDqxEMwWXPgCBWmGsIKS+4qAAA="
+ },
+ "/img/explore/kumbakonam": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQCw7CHC/eUgJiJT2uSagAD+SYmdgVI4Xv0c5obxvIU+zpMnWUSAZrkpQ0f1MRK7JpYPx7USTuNGG+8B1ihIAFHqLKgEw/q1JMl+FppvfT6XzNfX+Depj3flPeaPbiErAC3YL2/CvurMQFZZ6DE0+Rn4r40uAAA="
+ },
+ "/img/explore/mahamaham-kulam": {
+  "w": 2400,
+  "h": 2156,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABwBQCdASoYABYAPu1qrFEppaQjqAqpMB2JYwCdIOZBDZYaRvQZ2sEXaobP0n7+T8lZOg8AAP6QgGtU9fnyDeV+EC5JXiv9PX7nR6FjE1GBg7oJkgAvHlBv5y7YPjQmB3rHJ2RIxwfpkV2hUKuREs5UEGiXWGydiS2W0lnNNcioiKECCKjBdAuYqRggKE3AAAA="
+ },
+ "/img/explore/manora-fort": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JQAALfXF35rBjJJnSWgAA/vHDspsfXO1aA15MqMu60YRMYx3ipDG3IAxL7WKxxOmTiBR/S6a3+cMhSqtL5AiMjzsQrgrWyRikxUdx7iqZCtt30i/nbWH89YVxzx4vkCAAAA=="
+ },
+ "/img/explore/maratha-palace": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBdgMYTNq6E7F7l6wGsCvayAAP6yMHprc4H0OKpWDU5JuOSNzWbfIcvLdGIEJRYgbOh2BSXK1h6HBTg4W34D6Mq53I0Wo8PYlFoLrrpsD8tkZUgz8X9v9fEcMKYHe2rTXcBzQ3tYMA/RhJDk/jbdP4/X3psMYEeNdVPp9qDma3yyK6xHa9sbW6v8lwd47ywTwAAA"
+ },
+ "/img/explore/muthupet-lagoon": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JYgCdIMgDE3a1w0QyY0V7gAD+w4JJdMEmvqvh52/6WXjiz1G7JyMEGWsoghvXMbSIjqi+WJoefb6XvE5Vrv7B5yDYwwAmjRD2cQAA"
+ },
+ "/img/explore/nagore-dargah": {
+  "w": 2400,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBQCdASoYABIAPu1qr1CppaQiqAqpMB2JYwDKABEbP5NU+VTnFqnxU1EEImadoscrGaPeAAD+9CMKU4jSAVeWJnInuT/EC/ao/4A/BMjg0sV+hnyvu8REagiBgXjOD2NLjZ6gMRMq/eXpvhQT7/fotI9ws2wQVRcXPtHHVAx8tBI9mDfHBHgJP6i+v8uso6pGlRxbt5pIH9jawAA="
+ },
+ "/img/explore/navagraha": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZgCdMoC4AAtYh2y9K2vG5+Wc6mQAAPa6aX7Iz9GmVBRslp/CWtLXohEk4Qwwg3DEjrVNeQHlRrI3FiQc6An+MccjDWQNx223B7lob86Y+Rh/mEaqI/3c7wJulvo7G8ATWzNxqWTvJX8WSHZlYUnR8z85VQo/mZtZImVT5ae6deV4S12CiljMjvzvfylhQgAAAA=="
+ },
+ "/img/explore/poondi-madha": {
+  "w": 2400,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBQCdASoYABIAPu1irFAppSQisBgIATAdiWMAtOgQ3JV8MQMF6YnKvk/rk2HCe3DugAD+78NrR/T0u9qLFmWON297Aqtxw2NgGkX442owe2I5puYJuvU/dhQdSn4Vrgo9zBsMVhWyR/Kwwxj+qHurDiMPbLsFo+L/T/q8CSsc52PW0wA6gAAA"
+ },
+ "/img/explore/punnainallur": {
+  "w": 2400,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBQCdASoYABIAPu1mqU2ppaOiMAgBMB2JQBOmbRhp9mjLPEG/KOcg10f3vNdIN3O9bYAA/tMFM/NrW5U/uu7o/b/In0s5URDFsr0NdQXnEgjCP7KSQ7ucrE9iWoiMuSTTtQhUGs/EQYB8gyqc4F0h9Ndj1FgV4Kfh7hHxlfUKM2Fy0ACE2BewJYwI8d/g9OT6ALa2i7/xeAAA"
+ },
+ "/img/explore/rajali-bird-park": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQDE2ywBH4WPHWkeoKmE0gD+oov0GL+pBRw4REbhTPOzuuonKL5SL3cAzyzCoCKLs24Ji+ysXDW2O2ocbhm3GX+P6i+8HofYfCUg/XztfO6hSDJy5Hd4/flhYH1xS5QcwT6jdloPAAAA"
+ },
+ "/img/explore/rajarajan-manimandapam": {
+  "w": 2400,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQBACdASoYABIAPu1sq1EppaOiqAqpMB2JYwAAKYU5TIkWuIyUHpSYBoUcLytMAAD3Huo4gTpYGPUR4l3FGMVSJl+32K4ZOjCKYo9StTL3eggv8EvfvuIvfUpgCnND6PcoFdCUBnusb4O8h9QcLcmvkavxgt1knYc3p7zCmAxxuex/coRzUAAA"
+ },
+ "/img/explore/samuthiram-lake": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JagCdMoAC+86wYattZ3y+WeqQAP6ChCRbrAg3wsswZQPibqbNMB/t4RzLmh3JuchTrkctEf6opMQU5GnbNALWoUOdqstZMJMeh12VOTZCgcigTI3wPKAVdl/zWwAA"
+ },
+ "/img/explore/south-zone-cultural-centre": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZACsAB4I8Y6P6ov67xB6aokAAP7np6UpX7RO0xC3A5TJt+yPAkTbWArLr0xFGyRyLEoztJPfIZzaf0hG2GVBKT8YarRGVQwcp3gt6ua94sZdQV4El982pYlBDGallZjhksVzEpsOflnJh5/e+AAA"
+ },
+ "/img/explore/thanjavur-museum": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC2yB8vgMNrAsFEni6AAP4ndedVz0N1PEz/q39/AqKTyYOYZNZKOWx8FMaomFsWkrtlOJNdD6evtahrDXT3AUFpaScdJBg+TZGCNsgveKMuwWTkLP2BIOFr9w2bz0bah4LEJf8wcS/ZVqnddUC1MKvfH5mL9j2zfKhl22GBcYa2gAA="
+ },
+ "/img/explore/velankanni": {
+  "w": 2400,
+  "h": 1600,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoMljDgZaFkZNzrOwvAA/qmCwWO8UHKo63twUb6DSAG1TgAmM2Bcd/IOB0azF/kG6jzxXUvxNrga+aHKzAaxGgeGNf+oBKABTiiKu/uO0GcwhcbWzOYfsVm0zNHxUVCX5VMMPxIyiXHbhdzHF3ybEjWhwgAAAA=="
+ },
+ "/img/history/2012-atrium": {
+  "w": 2400,
+  "h": 1083,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAACwBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JbACdMoRwACsxYidS8O2KM7mDzOAAAP5pXgGrYCASemWgjc6i8PLWh5lWZ0OljDgmxpLtnBDR3eT5BiWIGyXegA+GybPhezknlLB+HRw1DP73S/cpfnnlelmLMymGT0f/h8/VFid8tmUTDr7J4w6xwV8l5MQJlhUHi+n+U3emJtpxSacuQ7XIVNPQVSbIl5ErqO4kgAA="
+ },
+ "/img/history/2014-lawn": {
+  "w": 2400,
+  "h": 1083,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JbAC7LwAB0hAWXUPGJi+Qjb4AAP7AvG2/kh+eKeWGEIizG8PfS9JV7Toa+VBRJ5012jfOE3GA+CP0lMJrcbrXMebPx0wGyDWDQmrzK1/SZU88NGtYflp8hh1U8JqdMmHfGIIzE0UaHckyEPu8CaNQAAA="
+ },
+ "/img/history/2015-rhythm": {
+  "w": 2400,
+  "h": 1083,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwAwCdASoYAAsAPu1iqU2ppaQiMAgBMB2JagCdMoAC2yMKuZ9Wk/CAAP7c+9CDfrKEqflv7DwOTDYM6lBFnHWAZbbR6cUhuT4KDQiU15ZdXktTIPvEASP17KhBi50++hJRJK350ximciAN66mkGhR0ak3uMGl8N3SZsp/9nJCnHXt8NUHn90u6wwAAAA=="
+ },
+ "/img/history/2021-residency": {
+  "w": 2400,
+  "h": 1083,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JaACdMoADYYgiPThNlx0tW2XhQAD8j8meWe5JtO/0Om+xIvjESdTc2N+UuULUQMrNTYKiBRn6WbdN0DHN2erZ1QhuLEXlblQBy4dylv3hLAEBmPqTQADzqgc6iXxBgoTBl3b/NOqNjTLxmJL2v6Khmp8uDCH4X+6bBGIAAAA="
+ },
+ "/img/history/2025-emerald": {
+  "w": 2400,
+  "h": 1076,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoYAAsAPu1iqU2ppaQiMAgBMB2JQBdgBH55s20eFI8kCnbsuZtFAAD+r+x+uKotL92psrLh1D6vPUmgqIa8LYIOjQYlRF4DvwpysYaY8mJD36b+i1QqBdNl7U/sPVkPdjeXqowi1tFRK1yGGBNVvKiB2X4fliTBW5UMCgAA"
+ },
+ "/img/home/hero-poster": {
+  "w": 2160,
+  "h": 3840,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2160
+  ],
+  "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACwAwCdASoNABgAPu1iqU2ppaOiMAgBMB2JQBYdgpZPCFuiFWj1hAD2b5C2c55ocv9mAk0qzJzb+wpZ7qlsl78xRXoobRWTABcR47k2ugN0kpi/TU5+ojYhOrCj/5FiNVwW+lH1jPjQDyj0PC3ePjSf6NVk+Zophr60bjXHLRGAAA=="
+ },
+ "/img/home/vista-poster": {
+  "w": 2160,
+  "h": 3840,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2160
+  ],
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoNABgAPu1iqU2ppaOiMAgBMB2JaACo9BrSbhjP0B4hl5HQAAD+y+xDMW9jDG8M7u8ds9Qd916hdFl7Cc7DCKEh3CRw0X5Gl7yJspx7S32opZugAw7HUTOd9PqVTB+fUUag2MyLSrAAAA=="
+ },
+ "/img/inn/atrium": {
+  "w": 3840,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400,
+   3200,
+   3840
+  ],
+  "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JbACdMoACPlSbu1ER/sePYPAAAP6TskkorekAcCxKzaWVAtU0apYWHlRxGGZaVzUtTQdeo7Wq9uS7rl+ipbLe0aV0nlPRUlffb7riF98keknOTefzqztuEKQCzGK+310Sd1LJ9jheRk5tWV8hctol/0rOtaXOjOmInP9Q/k6YmXcDQ5i20gAA"
+ },
+ "/img/inn/atrium-2": {
+  "w": 2240,
+  "h": 1344,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2240
+  ],
+  "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR3ACj2Mvw3MNRZS5cejoAAzaJOJSgQofVgi3aa1NihwTsV0XBaYhHuEXuyQZIDDcIJ6UYOhxKIGV1KLEuBLR8IhSBVO77dXysUgiq2PVEbkrjMdy9uCxlkmLJ8Ya3kHfaYRYMXJmmIP7O4asUMy0zIk4sXUtO7xsC+JzFW8VHtHpGu5C2DWjr00ETTfievkCBs4F4LY+dbyV5rAAA="
+ },
+ "/img/inn/banquet": {
+  "w": 2400,
+  "h": 1125,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAADQBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JbACdMoR3JoIqNz/4DZQt7GdJ7TC0AAD+1yP0C2ujOT2SGC0EFnM6eMtYW5lbpd98pm8sE+L046AHfT2xjJdL8QqMQEo1FFTJJsVKlWavsq9p5raSSnybRsg971ZbaEbwu2fkglB1nF8KCn2yn8p/OTb06WczOH3B1dcQ+etVVweSmS2XMiDb6nt/hzwAAAA="
+ },
+ "/img/inn/restaurant": {
+  "w": 2400,
+  "h": 1125,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBACdASoYAAsAPu1iqU2ppaOiMAgBMB2JbACdMoAlthiTHPw6DE8jzGDAAP5BPVDRuEN/wDyTM5z7726IMSiE++zRUtth/Za3cme3j0mgmpJ8GMPnMUQp4fTmhapsjPzwwoe3daMa+sF1FHSNhqn/f9J1wcCo8BCx29wGCYCde2exfRKz1QFqT+Wqn/n3NBoP8q3vLgjXg4U465nZJIdIY1LmBPvYlBdxNcmyk9CjPoJa5HtEAA=="
+ },
+ "/img/residency/corridor": {
+  "w": 2400,
+  "h": 1125,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACwBACdASoYAAsAPu1iqU2ppaQiMAgBMB2JaACdMoGv/7oABNIQ5b2HwQRiUuQAAM4+LdIqt7mnnM26tT/Ut8ffSI+1DbQJXEED5gGvjWZdevfXI04TkM4DtbCi0M+RZ+OJMXimxF79cQphFuufOvJU3rDrM6bLw7agPC47RGgAAA=="
+ },
+ "/img/residency/room-1": {
+  "w": 2400,
+  "h": 1350,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400
+  ],
+  "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JaACdMoADUuLIK9YlbZxiVAAA/ugP5MeKGSjRuyw0365nNi3thw8Mx2ZcUwCq6GoiOADPCPkfK78yMkoJ9N3iBBxH0a17qD3k8wOC91TYBfUoGw8e+Em3t+lNDgKRvbZF1/s+sZtzTgqRekEE1/4AAAA="
+ },
+ "/img/residency/room-2": {
+  "w": 3840,
+  "h": 1800,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2400,
+   3200,
+   3840
+  ],
+  "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACQBACdASoYAAsAPu1iqU2ppaQiMAgBMB2JbACdMoRwACoUfriVwMV8PgN20AAA/tPk/GVwxRnwwU52c4DeOm6M/8jtW+Jaz+/ShJ2a6IwmUCz6FTz7Ejs/azOkDfvi4Nxz81MA2xsP9JKrHnNrQCWsBXz+/P90Q3G0br4CK+Zn1pXynegkOoLYFjFQl4HSQ8p1SUumZ2iUsAAA"
+ },
+ "/img/residency/room-3": {
+  "w": 2240,
+  "h": 1344,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2240
+  ],
+  "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoR8eCm+XpqoLoCtuSQAAP7nKN/KejIctG74zWs4QNPlCwbWsTpiRfU4sFEYxW72w1A0F1xWsGADTaq/oYFead/3Nk1WTFmYDMeH4o0AQ23CO1nV/8qBWKdASZUKRcUg1m8AZFqLE9WFQnXSAAA="
+ },
+ "/img/team/portrait-1": {
+  "w": 1408,
+  "h": 3280,
+  "widths": [
+   640,
+   1024,
+   1408
+  ],
+  "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoKABgAPu1iqk4ppaQiMAgBMB2JaQAAYcwlsZS4wP8i0v4MsAD+lPE8tN8NT+zcPQNoTFTeT55d8ZBYQWdXS13gqjMZPJ327wdVCMqrklVBX+DXCstEnpX8fnB16qlGJLlrcay/J3VvoyUAAAA="
+ },
+ "/img/team/portrait-2": {
+  "w": 1408,
+  "h": 3280,
+  "widths": [
+   640,
+   1024,
+   1408
+  ],
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAwCdASoKABgAPu1iqU2ppaQiMAgBMB2JaQAASUSdjKaglAAA/VOPYartlaNsO+UCq73L2s2Pr02vetZt9JGI24WtlWvmFxkUyBCFd7ia28ePD2cbvy4AAAA="
+ },
+ "/img/team/portrait-3": {
+  "w": 1408,
+  "h": 3280,
+  "widths": [
+   640,
+   1024,
+   1408
+  ],
+  "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoKABgAPu1kq04ppaQiMAgBMB2JaQAAYXPXejBb3Bxf/AAA/pt+a1NHnDutf0Pfj2M/hK3WyJtTzbmuXABk7VEB6BQXURFePxOJlat+PNJ7Qga8akN28ZnVEJi6q+b64cEyAZ9qmq4DflEGdWwJcbwAAAA="
+ },
+ "/img/team/portrait-4": {
+  "w": 1408,
+  "h": 3280,
+  "widths": [
+   640,
+   1024,
+   1408
+  ],
+  "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoKABgAPu1iqU2ppaOiMAgBMB2JaQAASeU8h/mMmQH7n82YHAAA/bswzqkkf80euHrSYntrTNK8OpewgC43pvGmaO32VS1H7O2eQCvxtGd6wcWIvZjOnK96Ou7fZRAgL4q9ugyiiqjHUnf7nZv/3CrUc8IAAA=="
+ },
+ "/img/team/portrait-5": {
+  "w": 1408,
+  "h": 3280,
+  "widths": [
+   640,
+   1024,
+   1408
+  ],
+  "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoKABgAPu1iqU2ppaQiMAgBMB2JaQAATBHwnpbZCGQ+rsMAAPzym2n7oyb7ETCthFQ8aQtBV0LRrs1TsaJAuyfTSh1HxooT9sOdkYeWwEazCIY/6PF9dpkO9/INvK15CY7wwTs1u6uod+bqEYrHwnwAAAA="
+ }
+}

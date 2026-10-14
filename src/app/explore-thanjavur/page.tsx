@@ -5,7 +5,8 @@ import Footer from "@/components/chrome/Footer";
 import RegionMap from "@/components/pages/RegionMap";
 import Places from "@/components/pages/Places";
 import { Arrow } from "@/components/brand/Icons";
-import { img, place } from "@/lib/img";
+import { placeSrc } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "Explore Thanjavur", description: "The Big Temple, Darasuram, Kumbakonam, Velankanni, Nagore, Kallanai and more: twenty places to discover from your base at Abi's Hotel Group in Thanjavur." };
 
@@ -14,7 +15,7 @@ export default function Explore() {
     <>
       <main data-nav="dark">
         <section className="phero" style={{ minHeight: "100svh" }}>
-          <div className="phero__img"><img data-parallax="6" src={img("/img/explore/brihadeeswarar.jpg")} alt="The Brihadeeswarar Temple, Thanjavur, from the air" fetchPriority="high" style={{ height: "112%", marginTop: "-6%" }} /></div>
+          <div className="phero__img"><Img data-parallax="6" src="/img/explore/brihadeeswarar-wide.jpg" alt="The Brihadeeswarar Temple, Thanjavur" priority style={{ height: "112%", marginTop: "-6%" }} /></div>
           <div className="phero__copy">
             <div className="wrap">
               <nav className="crumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Explore Thanjavur</span></nav>
@@ -27,7 +28,7 @@ export default function Explore() {
 
         <section className="section">
           <div className="wrap grid-2">
-            <div className="arch" data-zoom style={{ aspectRatio: "4/5" }}><img src={img("/img/home/temple-nandi.jpg")} alt="Nandi facing a Chola temple vimana" loading="lazy" style={{ objectPosition: "35% 50%" }} /></div>
+            <div className="arch" data-zoom style={{ aspectRatio: "4/5" }}><Img src="/img/explore/brihadeeswarar-portrait.jpg" alt="The vimana of the Brihadeeswarar Temple, Thanjavur" sizes="(min-width: 900px) 45vw, 100vw" /></div>
             <div>
               <p className="kicker">Begin at the Big Temple</p>
               <Split className="display display--sm" text="Brihadeeswarar *Temple*" />
@@ -59,7 +60,7 @@ export default function Explore() {
         </section>
 
         <section className="frame" style={{ height: "70svh", minHeight: 420 }}>
-          <img data-parallax="10" src={place("kallanai-dam")} alt="Kallanai, the ancient Chola dam on the Kaveri" loading="lazy" style={{ width: "100%", height: "125%", marginTop: "-12%", objectFit: "cover" }} />
+          <Img data-parallax="10" src={placeSrc("kallanai-dam")} alt="Kallanai, the ancient Chola dam on the Kaveri" style={{ width: "100%", height: "125%", marginTop: "-12%", objectFit: "cover" }} />
         </section>
       </main>
       <Footer />

@@ -46,23 +46,3 @@ const Kolam = forwardRef<SVGSVGElement, Props>(function Kolam({ className, strok
   );
 });
 export default Kolam;
-
-/** A running kolam border: interlaced arcs with a pulli in each eye. */
-export function KolamBorder({ className }: { className?: string }) {
-  return (
-    <svg className={className} width="100%" height="26" aria-hidden="true">
-      <defs>
-        <pattern id="kolam-chain" width="40" height="26" patternUnits="userSpaceOnUse">
-          <g fill="none" stroke="currentColor" strokeWidth=".8">
-            <path d="M0 13C10 -1 30 -1 40 13" />
-            <path d="M0 13C10 27 30 27 40 13" />
-          </g>
-          <circle cx="20" cy="13" r="1.6" fill="currentColor" />
-          <circle cx="0" cy="13" r=".9" fill="currentColor" />
-          <circle cx="40" cy="13" r=".9" fill="currentColor" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="26" fill="url(#kolam-chain)" />
-    </svg>
-  );
-}

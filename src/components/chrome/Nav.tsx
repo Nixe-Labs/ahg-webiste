@@ -6,7 +6,7 @@ import FanMark from "@/components/brand/FanMark";
 import { Arrow } from "@/components/brand/Icons";
 import { NAV, GROUP, tel } from "@/lib/site";
 import { HOTELS } from "@/lib/hotels";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 import { getLenis } from "./SmoothScroll";
 
 export function Brand({ light }: { light?: boolean }) {
@@ -83,7 +83,7 @@ export default function Nav() {
             <div className="menu__hotels">
               {HOTELS.map((h) => (
                 <Link key={h.slug} href={`/${h.slug}/`} className="menu__hotel" tabIndex={open ? 0 : -1}>
-                  <img src={img(h.card)} alt="" />
+                  <Img src={h.card} sizes="84px" />
                   <span><b>{h.name}</b><small>{h.tier}</small></span>
                 </Link>
               ))}

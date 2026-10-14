@@ -5,7 +5,7 @@ import Footer from "@/components/chrome/Footer";
 import Kolam, { KOLAM_LINES } from "@/components/brand/Kolam";
 import { Arrow } from "@/components/brand/Icons";
 import { HISTORY } from "@/lib/content";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "Our History", description: "From Thanjavur's first apartment hotel in 2012 to the opening of The Emerald in 2025: the milestones, firsts and awards of Abi's Hotel Group." };
 
@@ -37,7 +37,7 @@ export default function History() {
                 </div>
                 {m.image ? (
                   <figure className="leaf-row__img" style={{ margin: 0, position: "relative" }}>
-                    <div className="frame" data-zoom><img src={img(m.image)} alt={m.caption ?? ""} loading="lazy" /></div>
+                    <div className="frame" data-zoom><Img src={m.image} alt={m.caption ?? ""} sizes="(min-width: 900px) 45vw, 100vw" /></div>
                     {m.caption && <figcaption>{m.caption}</figcaption>}
                   </figure>
                 ) : <div className="leaf-row__orn" aria-hidden="true"><svg viewBox="0 0 200 200" data-draw fill="none" stroke="currentColor" strokeWidth=".8">{KOLAM_LINES.map((d, i) => <path key={i} d={d} pathLength={1} />)}</svg></div>}

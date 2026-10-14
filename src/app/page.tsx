@@ -5,10 +5,12 @@ import HotelsRail from "@/components/home/HotelsRail";
 import Testimonials from "@/components/home/Testimonials";
 import Footer from "@/components/chrome/Footer";
 import Split from "@/components/fx/Split";
-import Kolam from "@/components/brand/Kolam";
+import LivingKolam from "@/components/fx/LivingKolam";
+import AmbientVideo from "@/components/fx/AmbientVideo";
 import { Arrow } from "@/components/brand/Icons";
 import { PLACES } from "@/lib/content";
-import { img, place } from "@/lib/img";
+import { placeSrc } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 const STATEMENT =
   "Established in Thanjavur, the Chola capital and rice bowl of Tamil Nadu, Abi's Hotel Group brings together three distinct stays, united by one ancient Tamil idea: ~Virunthombal,~ treating every guest as an honoured relative.";
@@ -40,7 +42,7 @@ export default function Home() {
 
         {/* ── the idea ── */}
         <section className="section" style={{ overflow: "hidden" }}>
-          <Kolam className="kolam-float" strokeWidth={0.45} dots />
+          <LivingKolam className="kolam-float" />
           <div className="wrap">
             <p className="kicker">Welcome to Abi&rsquo;s Hotel Group</p>
             <p className="statement" data-scrub-words>
@@ -77,6 +79,7 @@ export default function Home() {
               </div>
             </div>
             <div className="years" data-stagger>
+              <span className="years__line" aria-hidden="true"><i /></span>
               {YEARS.map(([y, t]) => (
                 <div key={y} className="year"><b>{y}</b><i /><p>{t}</p></div>
               ))}
@@ -86,15 +89,15 @@ export default function Home() {
 
         {/* ── the city ── */}
         <section className="vista">
-          <div className="vista__img"><img data-parallax="8" src={img("/img/home/temple-nandi.jpg")} alt="Nandi before a Chola temple vimana near Thanjavur" loading="lazy" style={{ height: "116%", marginTop: "-8%" }} /></div>
+          <div className="vista__img"><div data-parallax="8" className="vista__film"><AmbientVideo name="vista-fields" poster="/img/home/vista-poster.jpg" label="Paddy fields and coconut groves of the Kaveri delta near Thanjavur, from the air" preload="none" /></div></div>
           <div className="vista__copy">
             <div className="wrap grid-2" style={{ alignItems: "end" }}>
               <div>
                 <p className="kicker" style={{ color: "var(--color-gold-hi)" }}>Explore Thanjavur</p>
-                <Split className="display display--md" text="A city steeped in *history*" />
+                <Split className="display display--md" text="The rice bowl of *Tamil Nadu*" />
               </div>
               <div data-reveal className="on-dark">
-                <p className="lede" style={{ color: "rgba(246,240,229,.82)" }}>Capital of the Cholas, home of Tanjore painting, Carnatic music and classical dance, and the rice bowl of Tamil Nadu. Each of our hotels is a gateway to it.</p>
+                <p className="lede" style={{ color: "rgba(246,240,229,.82)" }}>The Kaveri delta keeps Thanjavur green, and the city keeps its history: capital of the Cholas, home of Tanjore painting, Carnatic music and classical dance. Each of our hotels is a gateway to it.</p>
                 <Link href="/explore-thanjavur/" className="btn" style={{ marginTop: 26 }}>Explore the city <Arrow /></Link>
               </div>
             </div>
@@ -105,7 +108,7 @@ export default function Home() {
             <div key={r} className={`marquee__row marquee__row--${r ? "rev" : "fwd"}`}>
               {[...row, ...row].map((p, i) => (
                 <Link key={i} href="/explore-thanjavur/" className="pcard" aria-hidden={i >= row.length} tabIndex={i >= row.length ? -1 : undefined}>
-                  <img src={place(p.image)} alt="" loading="lazy" />
+                  <Img src={placeSrc(p.image)} sizes="360px" />
                   <span><small>{p.kind}</small>{p.name}</span>
                 </Link>
               ))}
@@ -129,7 +132,7 @@ export default function Home() {
             </div>
             <div className="faces" data-stagger style={{ paddingTop: "10%" }}>
               {[1, 2, 3, 4, 5].map((n) => (
-                <div key={n} className="arch"><img src={img(`/img/team/portrait-${n}.jpg`)} alt="" loading="lazy" /></div>
+                <div key={n} className="face"><div className="arch"><Img src={`/img/team/portrait-${n}.jpg`} sizes="(min-width: 900px) 10vw, 20vw" /></div></div>
               ))}
             </div>
           </div>

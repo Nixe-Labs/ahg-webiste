@@ -1,14 +1,25 @@
 "use client";
-/* The first view: a mandapa arch frames the Big Temple from the air. Scroll, and the arch
-   widens until the whole city is in view: "a thousand years of welcome". */
+/* The first view: a mandapa arch holds a slow film of the Big Temple, seen between the pillars of
+   its cloister. Scroll, and the arch itself opens out to fill the screen: "a thousand years of
+   welcome". */
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Split from "@/components/fx/Split";
 import { Arrow } from "@/components/brand/Icons";
+import AmbientVideo from "@/components/fx/AmbientVideo";
 import { whenRevealed } from "@/lib/reveal";
-import { img } from "@/lib/img";
+
+/** The arch window, aligned to the same content edges as the nav (.wrap: 1440px max, gutter). */
+function archRect() {
+  const vw = document.documentElement.clientWidth, vh = innerHeight;
+  const nav = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")) || 84;
+  const gutter = Math.min(80, Math.max(16, vw * 0.046));
+  const right = vw - ((vw - Math.min(vw, 1440)) / 2 + gutter);
+  const w = Math.min(vw * 0.44, 640);
+  return { t: nav + vh * 0.03, r: vw - right, w };
+}
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,21 +29,18 @@ export default function HomeHero() {
   useEffect(() => {
     const el = root.current!;
     const media = el.querySelector<HTMLElement>(".hero__media")!;
-    const pic = media.querySelector("img")!;
+    const pic = media.querySelector("video")!;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 900px) and (prefers-reduced-motion: no-preference)", () => {
-      const arch = () => {
-        const vw = innerWidth, vh = innerHeight;
-        const nav = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")) || 84;
-        const w = Math.min(vw * 0.44, 620), l = vw * 0.52, t = nav + vh * 0.03, r = vw - l - w;
-        return `inset(${t}px ${r}px 0px ${l}px round ${w / 2}px ${w / 2}px 0px 0px)`;
-      };
+      // the film is portrait, so the arch box itself grows (rather than a mask over a full-screen
+      // film), letting object-fit re-crop smoothly from the whole frame to a band round the vimana
       gsap.timeline({ scrollTrigger: { trigger: el, start: "top top", end: "+=140%", pin: el.querySelector(".hero__pin"), scrub: 1, invalidateOnRefresh: true } })
-        .fromTo(media, { clipPath: arch }, { clipPath: "inset(0px 0px 0px 0px round 0px 0px 0px 0px)", ease: "power2.inOut", duration: 1 }, 0)
-        // the tower sits left of centre in the photograph: pan it into the arch, then let it drift home
-        .fromTo(pic, { scale: 1.14, xPercent: 42 }, { scale: 1, xPercent: 0, ease: "power2.inOut", duration: 1 }, 0)
+        .fromTo(media,
+          { top: () => archRect().t, right: () => archRect().r, width: () => archRect().w, borderRadius: () => `${archRect().w / 2}px ${archRect().w / 2}px 0px 0px` },
+          { top: 0, right: 0, width: () => document.documentElement.clientWidth, borderRadius: "0px 0px 0px 0px", ease: "power2.inOut", duration: 1 }, 0)
+        .fromTo(pic, { scale: 1.06, objectPosition: "45% 50%" }, { scale: 1, objectPosition: "45% 28%", ease: "power2.inOut", duration: 1 }, 0)
         .to(el.querySelector(".hero__copy"), { y: -140, opacity: 0, ease: "power1.in", duration: 0.5 }, 0)
         .to(el.querySelector(".hero__scroll"), { opacity: 0, duration: 0.2 }, 0)
         .to(media, { "--shade": 1, duration: 0.6 }, 0.3)
@@ -55,7 +63,7 @@ export default function HomeHero() {
       <div className="hero__pin">
         <div className="hero__media">
           <div className="hero__reveal">
-            <img src={img("/img/home/big-temple-aerial.jpg")} alt="The Brihadeeswarar Temple and its courtyard, seen from the air" fetchPriority="high" />
+            <AmbientVideo name="hero-temple" poster="/img/home/hero-poster.jpg" label="The Brihadeeswarar Temple, Thanjavur" />
           </div>
         </div>
 

@@ -5,7 +5,7 @@ import Footer from "@/components/chrome/Footer";
 import { Arrow, Phone, WhatsApp } from "@/components/brand/Icons";
 import { HOTELS, bookHref, inr } from "@/lib/hotels";
 import { BOOKING_URL, GROUP, tel } from "@/lib/site";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "Book Now", description: "Book your room at The Emerald, Abi's Residency or Abi's Inn, Thanjavur. Tariffs from ₹1,700 + GST per night." };
 
@@ -27,7 +27,7 @@ export default function Book() {
             <div className="bk" data-stagger>
               {HOTELS.map((h) => (
                 <article key={h.slug} className={`bk__card t-${h.theme}`}>
-                  <div className="bk__img"><img src={img(h.card)} alt={h.name} loading="lazy" /></div>
+                  <div className="bk__img"><Img src={h.card} alt={h.name} sizes="(min-width: 1000px) 33vw, 100vw" /></div>
                   <div className="bk__body">
                     <span className="kicker" style={{ color: "var(--t-accent-hi)", margin: 0 }}>{h.tier}</span>
                     <h3>{h.name}</h3>

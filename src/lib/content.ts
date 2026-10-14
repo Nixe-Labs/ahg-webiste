@@ -43,15 +43,19 @@ export const HISTORY: Milestone[] = [
 
 export type Review = { name: string; hotel?: string; quote: string; meta?: string };
 
+/* Verbatim excerpts from the guest reviews published on abishotels.com: each is one unbroken
+   passage, "…" marks where it was cut, and no excerpt steps over a criticism. */
 export const REVIEWS: Review[] = [
-  { name: "Venkat Manda", quote: "Hidden gem. I felt bad that I stayed only one night. Very well designed rooms, excellent service and food quality. Even the pre-arrival communication and reservation through WhatsApp was excellent." },
-  { name: "Hema", hotel: "The Emerald", meta: "Rooms 5.0 · Service 5.0 · Location 5.0", quote: "From check-in to check-out, everything was smooth, professional, and pleasant. The staff was incredibly courteous, always ready to assist with a smile, and made me feel right at home." },
-  { name: "Suresh S", quote: "Value for money stay. Loved the central courtyard with ample seating for a relaxed coffee, the housekeeping team's skill, and the breakfast, which is homely. Recommended." },
-  { name: "P R.", hotel: "The Emerald", quote: "We are senior citizens and stayed for three nights. The room was spacious, clean, and extremely comfortable, and room service was prompt throughout. Overall, it was an excellent stay." },
-  { name: "Rasa Thileepan", hotel: "Abi's Inn", quote: "Like an apartment home. Very friendly staff and good-sized rooms, each with two bathrooms and a nice living area. Complimentary breakfast with South Indian choices. Great price." },
-  { name: "Dharani Mahesh", meta: "Rooms 5.0 · Location 5.0", quote: "Dreamy comfort and flawless service. A perfect stay, worth every moment." },
-  { name: "Voleti Srikanth", quote: "One can get the feeling of staying at home although away from home. The hotel is near the Brihadeeswara temple, and the chocolates on Independence Day were a very nice gesture." },
-  { name: "Santhosh Kumar Jayasankar", quote: "Visiting Thanjavur with my family. Best service and super clean, with parking too. Go for it without any doubts." },
+  { name: "Venkat Manda", quote: "Hidden Gem. I felt bad that I stayed only one night. Very well designed rooms, I ordered food twice in the room, excellent service and food quality. Even pre-arrival communication experience and reservation through WhatsApp was excellent." },
+  { name: "Hema", hotel: "The Emerald", meta: "Rooms 5.0 · Service 5.0 · Location 5.0", quote: "…From check-in to check-out, everything was smooth, professional, and pleasant. The staff was incredibly courteous, always ready to assist with a smile, and made me feel right at home." },
+  { name: "Arokkiyasamy S", hotel: "The Emerald", quote: "…Since my first visit, it has become our go-to hotel not only for business but also for family stays. The hotel is very clean and well maintained, and the front desk team are consistently helpful, professional and friendly." },
+  { name: "Kayshandra", quote: "Reception staff Sivaranjani and Kavitha helped my parents so much when they unexpectedly fell sick on this trip. They went out of their way to help my family. Truly amazing service." },
+  { name: "Pramila Sanggu", quote: "…The room was spotless, comfortable, and thoughtfully prepared, making it easy to relax from the moment I arrived. The staff were warm, professional, and always ready to assist with a smile, ensuring every request was attended to promptly." },
+  { name: "P R.", hotel: "The Emerald", quote: "We are senior citizens and stayed at The Emerald, Thanjavur for three nights. The hotel is newly constructed and very well maintained. Our overall experience was excellent." },
+  { name: "Suresh S", quote: "…Loved the central courtyard with ample seatings for a relaxed coffee. Appreciate the house keeping teams skill in making the bed and room maintenance. Loved the breakfast which is homely and value for money." },
+  { name: "Dharani Mahesh", meta: "Rooms 5.0 · Service 4.0 · Location 5.0", quote: "Dreamy Comfort and flawless service. A perfect stay - worth every moment." },
+  { name: "Santhosh Kumar Jayasankar", quote: "…Best service and super clean. They even provide you parking facilities. Go for it without any doubts." },
+  { name: "Voleti Srikanth", quote: "Rooms were excellent and comfortable. One can get the feeling of staying at home although they are away from home…" },
 ];
 
 export const DEPARTMENTS = ["Front Office", "Housekeeping", "F&B Service", "F&B Production", "Back Office"];

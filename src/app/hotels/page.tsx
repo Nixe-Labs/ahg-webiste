@@ -5,7 +5,7 @@ import Footer from "@/components/chrome/Footer";
 import { Arrow } from "@/components/brand/Icons";
 import { AMENITY_TEXT, HOTELS, bookHref, inr } from "@/lib/hotels";
 import { BOOKING_URL } from "@/lib/site";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "Our Hotels", description: "Discover your perfect stay in Thanjavur: The Emerald, Abi's Residency and Abi's Inn, each with its own character, all with the same warm welcome." };
 
@@ -29,7 +29,7 @@ export default function Hotels() {
           <section key={h.slug} className={`section t-${h.theme}`} style={{ paddingTop: i ? undefined : 40 }}>
             <div className={`wrap feature${i % 2 ? " feature--flip" : ""}`}>
               <Link href={`/${h.slug}/`} className="arch feature__img" style={{ aspectRatio: "4/5", borderRadius: undefined }} data-zoom data-cursor="view" aria-label={`Discover ${h.name}`}>
-                <img src={img(h.card)} alt={`${h.name}, Thanjavur`} loading="lazy" />
+                <Img src={h.card} alt={`${h.name}, Thanjavur`} sizes="(min-width: 900px) 50vw, 100vw" />
               </Link>
               <div>
                 <p className="kicker" style={{ color: "var(--t-accent)" }}>0{i + 1} · {h.tier} · Since {h.since}</p>

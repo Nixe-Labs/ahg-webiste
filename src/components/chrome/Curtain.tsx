@@ -20,29 +20,39 @@ export default function Curtain() {
       const a = (e.target as Element).closest?.("a");
       if (!a || a.target === "_blank" || a.hasAttribute("download")) return;
       const url = new URL(a.href, location.href);
-      if (url.origin !== location.origin || url.pathname === location.pathname || /\.\w+$/.test(url.pathname)) return;
+      const slash = (p: string) => (p.endsWith("/") ? p : p + "/");
+      // only this site's own pages: other projects share the github.io origin
+      const inBase = !BASE || url.pathname === BASE || url.pathname.startsWith(BASE + "/");
+      if (url.origin !== location.origin || !inBase || slash(url.pathname) === slash(location.pathname) || /\.\w+$/.test(url.pathname)) return;
       e.preventDefault();
       e.stopPropagation();
       if (pending.current) return;
       pending.current = true;
-      const path = url.pathname.startsWith(BASE) ? url.pathname.slice(BASE.length) || "/" : url.pathname;
+      const path = url.pathname.slice(BASE.length) || "/";
       gsap.timeline()
         .set(ref.current, { yPercent: 100, visibility: "visible" })
         .to(ref.current, { yPercent: 0, duration: 0.75, ease: "expo.inOut" })
-        .fromTo(ref.current!.querySelector("svg"), { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "expo.out" }, 0.35)
-        .add(() => router.push(path + url.search + url.hash));
+        .fromTo(ref.current!.querySelector("svg"), { scale: 0.6, opacity: 0, y: 0 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 0.35)
+        .add(() => {
+          router.push(path + url.search + url.hash);
+          // never leave the curtain down if the route somehow does not change
+          setTimeout(() => { if (pending.current) lift(); }, 3000);
+        });
     };
     document.addEventListener("click", click, true);
     return () => document.removeEventListener("click", click, true);
   }, [router]);
 
-  useEffect(() => {
-    if (!pending.current) return;
+  function lift() {
     pending.current = false;
     gsap.timeline({ delay: 0.15 })
       .to(ref.current!.querySelector("svg"), { y: -30, opacity: 0, duration: 0.4, ease: "power2.in" })
       .to(ref.current, { yPercent: -100, duration: 0.95, ease: "expo.inOut" }, 0.1)
       .set(ref.current, { visibility: "hidden" });
+  }
+
+  useEffect(() => {
+    if (pending.current) lift();
   }, [pathname]);
 
   return (

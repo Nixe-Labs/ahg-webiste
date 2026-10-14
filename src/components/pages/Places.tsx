@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { PLACES, type Place } from "@/lib/content";
-import { place } from "@/lib/img";
+import { placeSrc } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 const KINDS: ("All" | Place["kind"])[] = ["All", "Sacred", "Heritage", "Leisure & Nature"];
 
@@ -31,7 +32,7 @@ export default function Places() {
       <div ref={grid} className="places" data-stagger>
         {PLACES.map((p) => (
           <article key={p.name} className={`place${kind !== "All" && p.kind !== kind ? " is-out" : ""}`}>
-            <div className="frame"><img src={place(p.image)} alt={p.name} loading="lazy" /></div>
+            <div className="frame"><Img src={placeSrc(p.image)} alt={p.name} sizes="(min-width: 1100px) 30vw, (min-width: 640px) 50vw, 100vw" /></div>
             <div>
               <span className="tag">{p.kind} · {p.region === "city" ? "In Thanjavur" : "Day trip"}</span>
               <h3>{p.name}</h3>

@@ -13,6 +13,3 @@ export function whenRevealed(cb: () => void) {
   else waiting.push(cb);
   return () => { const i = waiting.indexOf(cb); if (i > -1) waiting.splice(i, 1); };
 }
-
-/** The path the visitor landed on. The intro plays only for a direct landing on the home page. */
-export const LANDING = typeof window !== "undefined" ? location.pathname : "";

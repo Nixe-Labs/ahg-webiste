@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { KolamBorder } from "@/components/brand/Kolam";
 import { Arrow, Instagram, LinkedIn, Mail, Phone } from "@/components/brand/Icons";
 import Split from "@/components/fx/Split";
 import { Brand } from "./Nav";
@@ -9,7 +8,7 @@ import { HOTELS } from "@/lib/hotels";
 export default function Footer() {
   return (
     <footer className="footer night">
-      <KolamBorder className="footer__border" />
+      <div className="footer__border" aria-hidden="true" />
       <div className="wrap">
         <div className="footer__cta">
           <div>
@@ -57,8 +56,8 @@ export default function Footer() {
         </div>
 
         <div className="footer__base">
-          <span>© {new Date().getFullYear()} Abi&rsquo;s Hotel Group, Thanjavur</span>
-          <span>Rooted in Tamil heritage since 2012</span>
+          <span>Unofficial concept preview, not affiliated with or operated by Abi&rsquo;s Hotel Group · Content &amp; hotel photography © Abi&rsquo;s Hotel Group · Official site: <a href="https://abishotels.com" target="_blank" rel="noreferrer">abishotels.com</a></span>
+          <span><Link href="/credits/">Photo &amp; film credits</Link></span>
         </div>
       </div>
       <p className="footer__giant" aria-hidden="true">Thanjavur</p>

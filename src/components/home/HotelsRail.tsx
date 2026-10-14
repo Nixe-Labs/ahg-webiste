@@ -9,7 +9,7 @@ import { HOTELS, bookHref, inr } from "@/lib/hotels";
 import { BOOKING_URL } from "@/lib/site";
 import { Arrow } from "@/components/brand/Icons";
 import Split from "@/components/fx/Split";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +44,7 @@ export default function HotelsRail() {
           <article key={h.slug} className={`rail__panel t-${h.theme}`}>
             <span className="rail__num">0{i + 1} / 03</span>
             <Link href={`/${h.slug}/`} className="arch rail__img" data-cursor="view" aria-label={`Discover ${h.name}`}>
-              <img src={img(h.card)} alt={`${h.name}, Thanjavur`} loading="lazy" />
+              <span className="kb"><Img src={h.card} alt={`${h.name}, Thanjavur`} sizes="(min-width: 900px) 42vw, 100vw" /></span>
             </Link>
             <div className="rail__copy">
               <p className="kicker">{h.tier} · Since {h.since}</p>

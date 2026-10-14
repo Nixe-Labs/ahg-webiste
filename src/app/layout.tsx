@@ -11,11 +11,12 @@ import { BASE } from "@/lib/base";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  // A redesign concept: kept out of search so it never competes with the live abishotels.com
+  // An unofficial concept preview: kept out of search so it never competes with the live abishotels.com
   robots: { index: false, follow: false },
   title: { default: "Abi's Hotel Group, Thanjavur | Three hotels, one welcome", template: "%s · Abi's Hotel Group, Thanjavur" },
   description: "Abi's Inn, Abi's Residency and The Emerald: three distinct hotels in Thanjavur, minutes from the Brihadeeswarar Temple, united by the Tamil art of Virunthombal.",
-  openGraph: { title: "Abi's Hotel Group, Thanjavur", description: "Three distinct hotels in the Chola capital, united by Virunthombal.", images: [{ url: `${BASE}/img/home/big-temple-aerial.jpg`, width: 1600, height: 900 }] },
+  openGraph: { title: "Abi's Hotel Group — a website concept", description: "A redesign concept for Abi's Hotel Group, Thanjavur: three hotels in the Chola capital, united by Virunthombal.", images: [{ url: `${BASE}/img/og.jpg`, width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", images: [`${BASE}/img/og.jpg`] },
   icons: { icon: `${BASE}/img/brand/favicon.png` },
 };
 export const viewport: Viewport = { themeColor: "#f6f0e5", viewportFit: "cover" };

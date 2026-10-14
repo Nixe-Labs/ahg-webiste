@@ -3,17 +3,21 @@
    the AHG fan unfolds blade by blade, and the temple doors open onto the page.
    Rendered on the server so it covers the page from the first paint; a head script adds
    .no-intro for repeat visits in the same session, deep links and reduced motion. */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import gsap from "gsap";
 import Kolam from "@/components/brand/Kolam";
 import FanMark, { FAN_ANGLES, FAN_CENTER } from "@/components/brand/FanMark";
 import { getLenis } from "@/components/chrome/SmoothScroll";
-import { LANDING, markRevealed } from "@/lib/reveal";
+import { markRevealed } from "@/lib/reveal";
+
+const never = () => () => {};
 
 export default function Intro() {
   const root = useRef<HTMLDivElement>(null);
-  // arriving here by client navigation: no intro (the route curtain already did the honours)
-  const [gone, setGone] = useState(() => typeof window !== "undefined" && location.pathname !== LANDING);
+  // false while hydrating a real page load (matching the server HTML), true when the home page is
+  // mounted by client navigation or Back/Forward: then the route curtain has already done the honours
+  const clientMount = useSyncExternalStore(never, () => true, () => false);
+  const [gone, setGone] = useState(clientMount);
 
   useEffect(() => {
     const el = root.current;

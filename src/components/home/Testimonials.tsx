@@ -48,6 +48,7 @@ export default function Testimonials() {
           <button className="round" onClick={() => go(1)} aria-label="Next review"><Arrow /></button>
         </div>
         <div className="quotes__bar"><i ref={bar} /></div>
+        <p className="quotes__src">Excerpts from guest reviews on <a href="https://abishotels.com" target="_blank" rel="noreferrer">abishotels.com</a></p>
       </div>
       <div ref={stage} className="quotes__stage" aria-live="polite">
         {REVIEWS.map((r, k) => (

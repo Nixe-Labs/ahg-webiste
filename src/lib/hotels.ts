@@ -1,4 +1,5 @@
 import { BOOKING_URL } from "./site";
+import { BASE } from "./base";
 
 export type Room = { name: string; price: number; guests: number };
 export type Feature = { title: string; text: string; image: string };
@@ -10,7 +11,6 @@ export type Hotel = {
   since: number;
   /** theme key used for colours: see .t-inn / .t-residency / .t-emerald in globals.css */
   theme: "inn" | "residency" | "emerald";
-  logo: string;
   tagline: string;
   kicker: string;
   intro: string;
@@ -34,7 +34,6 @@ export const HOTELS: Hotel[] = [
     tier: "Premium",
     since: 2025,
     theme: "emerald",
-    logo: "/img/brand/emerald-logo.png",
     tagline: "Exquisite Rooms. Exceptional Service.",
     kicker: "The latest jewel in the crown",
     intro:
@@ -65,7 +64,6 @@ export const HOTELS: Hotel[] = [
     tier: "Heritage quarter",
     since: 2021,
     theme: "residency",
-    logo: "/img/brand/residency-logo.png",
     tagline: "Your gateway to Thanjavur's rich heritage.",
     kicker: "Steps from the Big Temple",
     intro:
@@ -95,7 +93,6 @@ export const HOTELS: Hotel[] = [
     tier: "Apartment hotel",
     since: 2012,
     theme: "inn",
-    logo: "/img/brand/inn-logo.png",
     tagline: "Experience comfort amidst heritage.",
     kicker: "Where it all began",
     intro:
@@ -137,7 +134,7 @@ export const HOTELS: Hotel[] = [
 export const hotel = (slug: Hotel["slug"]) => HOTELS.find((h) => h.slug === slug)!;
 
 /** Where a "Book" button goes: the booking engine once configured, otherwise the hotel's WhatsApp. */
-export const bookHref = (h?: Hotel) => BOOKING_URL || h?.contact.whatsapp || "/book-now/";
+export const bookHref = (h?: Hotel) => BOOKING_URL || h?.contact.whatsapp || `${BASE}/book-now/`;
 
 export const AMENITY_TEXT: Record<string, [string, string]> = {
   security: ["24/7 Security", "A dedicated team stands watch, day and night."],

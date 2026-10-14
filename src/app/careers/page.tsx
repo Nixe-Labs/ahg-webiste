@@ -5,7 +5,7 @@ import Footer from "@/components/chrome/Footer";
 import { CareerForm } from "@/components/pages/Forms";
 import { DEPARTMENTS } from "@/lib/content";
 import { GROUP } from "@/lib/site";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 export const metadata: Metadata = { title: "Careers", description: "Build a career in hospitality with Abi's Group of Hotels in Thanjavur: front office, housekeeping, food & beverage, kitchen, sales and management." };
 
@@ -23,7 +23,7 @@ export default function Careers() {
 
         <section style={{ paddingBottom: 40 }}>
           <div className="wrap faces" data-stagger style={{ maxWidth: 1100 }}>
-            {[1, 2, 3, 4, 5].map((n) => <div key={n} className="arch"><img src={img(`/img/team/portrait-${n}.jpg`)} alt="" loading="lazy" /></div>)}
+            {[1, 2, 3, 4, 5].map((n) => <div key={n} className="face"><div className="arch"><Img src={`/img/team/portrait-${n}.jpg`} sizes="(min-width: 900px) 18vw, 20vw" /></div></div>)}
           </div>
         </section>
 

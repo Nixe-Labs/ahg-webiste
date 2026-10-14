@@ -5,7 +5,7 @@ import Gallery from "./Gallery";
 import { AMENITY_ICONS, Arrow, Instagram, WhatsApp } from "@/components/brand/Icons";
 import { AMENITY_TEXT, HOTELS, bookHref, inr, type Hotel } from "@/lib/hotels";
 import { BOOKING_URL, tel } from "@/lib/site";
-import { img } from "@/lib/img";
+import Img from "@/components/fx/Img";
 
 const ext = (href: string) => (href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {});
 
@@ -20,7 +20,7 @@ export default function HotelPage({ h }: { h: Hotel }) {
     <>
       <main data-nav="dark" className={`t-${h.theme}`}>
         <section className="phero">
-          <div className="phero__img"><img data-parallax="6" src={img(h.hero)} alt={`${h.name}, Thanjavur`} fetchPriority="high" style={{ height: "112%", marginTop: "-6%" }} /></div>
+          <div className="phero__img"><Img data-parallax="6" src={h.hero} alt={`${h.name}, Thanjavur`} priority style={{ height: "112%", marginTop: "-6%" }} /></div>
           <div className="phero__copy">
             <div className="wrap">
               <nav className="crumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/hotels/">Hotels</Link></nav>
@@ -47,8 +47,8 @@ export default function HotelPage({ h }: { h: Hotel }) {
               <p className="lede" data-reveal style={{ marginTop: 16 }}>{rest.join(" ")}</p>
             </div>
             <div className="hp-intro__art">
-              <div className="arch" data-zoom><img src={img(h.gallery[1] ?? h.hero)} alt="" loading="lazy" /></div>
-              <div className="frame" data-reveal="0.3"><img src={img(h.gallery[2] ?? h.card)} alt="" loading="lazy" style={{ height: "100%" }} /></div>
+              <div className="arch" data-zoom><Img src={h.gallery[1] ?? h.hero} sizes="(min-width: 900px) 45vw, 100vw" /></div>
+              <div className="frame" data-reveal="0.3"><Img src={h.gallery[2] ?? h.card} sizes="(min-width: 900px) 20vw, 44vw" style={{ height: "100%" }} /></div>
             </div>
           </div>
         </section>
@@ -59,7 +59,7 @@ export default function HotelPage({ h }: { h: Hotel }) {
             <div className="wrap">
               {h.features.map((f, i) => (
                 <div key={f.title} className={`feature${i % 2 ? " feature--flip" : ""}`}>
-                  <div className="frame feature__img" data-zoom><img src={img(f.image)} alt={f.title} loading="lazy" /></div>
+                  <div className="frame feature__img" data-zoom><Img src={f.image} alt={f.title} sizes="(min-width: 900px) 55vw, 100vw" /></div>
                   <div>
                     <p className="kicker">At {h.name}</p>
                     <Split as="h3" text={f.title} />
@@ -156,7 +156,7 @@ export default function HotelPage({ h }: { h: Hotel }) {
             <div className="siblings" style={{ marginTop: 44 }} data-stagger>
               {others.map((o) => (
                 <Link key={o.slug} href={`/${o.slug}/`} className="sib" data-cursor="view">
-                  <img src={img(o.card)} alt="" loading="lazy" />
+                  <Img src={o.card} sizes="(min-width: 800px) 50vw, 100vw" />
                   <div><span className="kicker" style={{ color: "var(--color-gold-hi)", margin: 0 }}>{o.tier}</span><h3>{o.name}</h3></div>
                 </Link>
               ))}

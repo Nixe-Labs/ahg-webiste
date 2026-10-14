@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Arrow, ArrowL } from "@/components/brand/Icons";
 import { getLenis } from "@/components/chrome/SmoothScroll";
-import { img } from "@/lib/img";
+import Img, { largest } from "@/components/fx/Img";
 
 /* A strip of photographs you can drag through, opening into a lightbox. */
 export default function Gallery({ images, name }: { images: string[]; name: string }) {
@@ -48,13 +48,13 @@ export default function Gallery({ images, name }: { images: string[]; name: stri
         <div className="gallery">
           {images.map((src, i) => (
             <button key={src} className="gallery__item" data-cursor="view" onClick={() => !moved.current && setOpen(i)} aria-label={`Open photo ${i + 1} of ${name}`}>
-              <img src={img(src)} alt="" loading="lazy" draggable={false} />
+              <Img src={src} sizes="(min-width: 900px) 50vw, 85vw" draggable={false} />
             </button>
           ))}
         </div>
       </div>
       <div className={`lightbox${open !== null ? " is-open" : ""}`} role="dialog" aria-modal="true" aria-label={`${name} gallery`} onClick={(e) => e.target === e.currentTarget && setOpen(null)}>
-        {open !== null && <img key={open} src={img(images[open])} alt={`${name}, photo ${open + 1}`} />}
+        {open !== null && <img key={open} src={largest(images[open], 2400)} alt={`${name}, photo ${open + 1}`} />}
         <button className="round lightbox__prev" onClick={() => step(-1)} aria-label="Previous photo"><ArrowL /></button>
         <button className="round lightbox__next" onClick={() => step(1)} aria-label="Next photo"><Arrow /></button>
         <button className="lightbox__close" onClick={() => setOpen(null)}>Close ✕</button>
