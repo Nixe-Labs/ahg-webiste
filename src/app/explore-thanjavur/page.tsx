@@ -15,7 +15,7 @@ export default function Explore() {
     <>
       <main data-nav="dark">
         <section className="phero" style={{ minHeight: "100svh" }}>
-          <div className="phero__img"><Img data-parallax="6" src="/img/explore/brihadeeswarar-wide.jpg" alt="The Brihadeeswarar Temple, Thanjavur" priority style={{ height: "112%", marginTop: "-6%" }} /></div>
+          <div className="phero__img"><Img data-parallax="6" src="/img/explore/brihadeeswarar-wide.jpg" alt="The Brihadeeswarar Temple, Thanjavur" priority sizes="(max-aspect-ratio: 1/1) 120vh, 100vw" style={{ height: "112%", marginTop: "-6%" }} /></div>
           <div className="phero__copy">
             <div className="wrap">
               <nav className="crumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Explore Thanjavur</span></nav>

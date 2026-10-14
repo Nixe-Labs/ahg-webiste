@@ -39,18 +39,18 @@ loop() { # <filter> <tag>
   q -i "$TMP/src-$2.mp4" -filter_complex "${LOOP},format=yuv420p" -c:v libx264 -preset slow -crf 12 "$TMP/loop-$2.mp4"
 }
 av1() { q -i "$1" -an -vf "$2" -c:v libsvtav1 -preset 5 -crf 34 -g 120 -movflags +faststart "$3"; }
-avc() { q -i "$1" -an -vf "$2" -c:v libx264 -preset slow -crf "$4" -profile:v high -pix_fmt yuv420p -movflags +faststart "$3"; }
+avc() { q -i "$1" -an -vf "$2" -c:v libx264 -preset slow -crf "$4" -profile:v high -level:v "$5" -pix_fmt yuv420p -movflags +faststart "$3"; }  # explicit level: older decoders refuse 5.x
 
 loop "$(short 1440)" full
-avc "$TMP/loop-full.mp4" "$(short 720)" "$OUT/$NAME-720.mp4" 26
+avc "$TMP/loop-full.mp4" "$(short 720)" "$OUT/$NAME-720.mp4" 26 3.1
 if [[ -n $CROP ]]; then
   CW=${CROP%%:*} CH=${CROP##*:}
   loop "crop=iw:trunc(iw*$CH/$CW/2)*2" band
   av1 "$TMP/loop-band.mp4" "scale='min(iw,2560)':-2:flags=lanczos" "$OUT/$NAME-1440.mp4"
-  avc "$TMP/loop-band.mp4" "scale=1920:-2:flags=lanczos" "$OUT/$NAME-1080.mp4" 24
+  avc "$TMP/loop-band.mp4" "scale=1920:-2:flags=lanczos" "$OUT/$NAME-1080.mp4" 24 4.1
 else
   av1 "$TMP/loop-full.mp4" "null" "$OUT/$NAME-1440.mp4"
-  avc "$TMP/loop-full.mp4" "$(short 1080)" "$OUT/$NAME-1080.mp4" 23
+  avc "$TMP/loop-full.mp4" "$(short 1080)" "$OUT/$NAME-1080.mp4" 23 4.1
 fi
 
 # poster: the loop's opening frame, from the full-resolution source

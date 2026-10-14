@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#f6f0e5", viewportFit: "cover" };
 
 /* Runs before first paint: motion on → hidden pre-reveal states apply; repeat visit, deep link
-   or reduced motion → the home intro never shows. */
-const BOOT = `(function(){var d=document.documentElement;try{var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r)d.classList.add('js');if(r||location.hash||sessionStorage.getItem('ahg-seen'))d.classList.add('no-intro')}catch(e){}})();`;
+   or reduced motion → the home intro never shows; a visitor who paused motion stays paused. */
+const BOOT = `(function(){var d=document.documentElement;try{var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r)d.classList.add('js');if(r||location.hash||sessionStorage.getItem('ahg-seen'))d.classList.add('no-intro');if(sessionStorage.getItem('ahg-motion')==='paused')d.classList.add('motion-paused')}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

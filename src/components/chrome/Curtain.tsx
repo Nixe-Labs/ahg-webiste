@@ -12,6 +12,7 @@ export default function Curtain() {
   const pathname = usePathname();
   const ref = useRef<HTMLDivElement>(null);
   const pending = useRef(false);
+  const fallback = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -36,7 +37,8 @@ export default function Curtain() {
         .add(() => {
           router.push(path + url.search + url.hash);
           // never leave the curtain down if the route somehow does not change
-          setTimeout(() => { if (pending.current) lift(); }, 3000);
+          clearTimeout(fallback.current);
+          fallback.current = setTimeout(() => { if (pending.current) lift(); }, 3000);
         });
     };
     document.addEventListener("click", click, true);
@@ -44,6 +46,7 @@ export default function Curtain() {
   }, [router]);
 
   function lift() {
+    clearTimeout(fallback.current);
     pending.current = false;
     gsap.timeline({ delay: 0.15 })
       .to(ref.current!.querySelector("svg"), { y: -30, opacity: 0, duration: 0.4, ease: "power2.in" })

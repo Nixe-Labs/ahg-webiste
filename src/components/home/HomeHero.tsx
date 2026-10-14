@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Split from "@/components/fx/Split";
 import { Arrow } from "@/components/brand/Icons";
 import AmbientVideo from "@/components/fx/AmbientVideo";
+import MotionToggle from "@/components/fx/MotionToggle";
 import { whenRevealed } from "@/lib/reveal";
 
 /** The arch window, aligned to the same content edges as the nav (.wrap: 1440px max, gutter). */
@@ -65,6 +66,7 @@ export default function HomeHero() {
           <div className="hero__reveal">
             <AmbientVideo name="hero-temple" poster="/img/home/hero-poster.jpg" label="The Brihadeeswarar Temple, Thanjavur" />
           </div>
+          <MotionToggle className="film-toggle film-toggle--hero" />
         </div>
 
         <div className="hero__copy">

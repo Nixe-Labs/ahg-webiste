@@ -31,7 +31,7 @@ export default function Intro() {
 
     const tl = gsap.timeline({ delay: 0.25 });
     tl.fromTo(q(".kolam-dot"), { scale: 0, transformOrigin: "50% 50%", opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(3)", stagger: { each: 0.025, from: "center" } })
-      .fromTo(q(".kolam-line"), { strokeDasharray: "1 1.02", strokeDashoffset: 1.01 }, { strokeDashoffset: 0, duration: 2.1, ease: "power2.inOut", stagger: 0.28 }, 0.25)
+      .fromTo(q(".kolam-line"), { strokeDasharray: "1 1.02", strokeDashoffset: 1.01 }, { strokeDashoffset: 0, duration: 2.1, ease: "power2.inOut", stagger: 0.28, autoRound: false }, 0.25)
       .to(q(".intro__kolam"), { rotation: 22, scale: 1.18, opacity: 0.16, duration: 1.6, ease: "power3.inOut" }, 2.15)
       .fromTo(blades, { rotation: 0, svgOrigin: `${FAN_CENTER.x} ${FAN_CENTER.y}`, opacity: 0 }, { rotation: (i) => FAN_ANGLES[i], opacity: 1, duration: 1.15, ease: "expo.out", stagger: { each: 0.03, from: "center" } }, 2.3)
       .fromTo(q(".fan-pearl"), { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.6, ease: "back.out(3)" }, 2.75)

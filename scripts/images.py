@@ -10,7 +10,7 @@ is never copied across.
 """
 import base64, io, json, re, sys
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image, ImageCms, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public" / "img"
@@ -31,13 +31,39 @@ def preview(im: Image.Image) -> str:
     return "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
 
 
+SRGB = ImageCms.createProfile("sRGB")
+
+
+def to_srgb(im: Image.Image) -> Image.Image:
+    """Convert from the embedded colour profile (Display P3, Adobe RGB...) to sRGB: the profile is
+    not copied to the WebP, so unconverted wide-gamut pixels would look dull."""
+    icc = im.info.get("icc_profile")
+    if im.mode in ("RGBA", "LA", "P"):
+        im = im.convert("RGBA")
+        flat = Image.new("RGB", im.size, (246, 240, 229))  # the site's ivory, never black
+        flat.paste(im, mask=im.getchannel("A"))
+        im = flat
+    if icc:
+        try:
+            src = ImageCms.ImageCmsProfile(io.BytesIO(icc))
+            return ImageCms.profileToProfile(im.convert("RGB"), src, SRGB, renderingIntent=0, outputMode="RGB")
+        except (ImageCms.PyCMSError, OSError):
+            pass
+    return im.convert("RGB")
+
+
 def build(src_dir: Path) -> None:
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     for path in sorted(src_dir.glob("*/*")):
         if path.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
             continue
         key = f"{path.parent.name}/{path.stem}"
-        im = ImageOps.exif_transpose(Image.open(path)).convert("RGB")
+        raw = Image.open(path)
+        icc = raw.info.get("icc_profile")
+        im = ImageOps.exif_transpose(raw)
+        if icc:
+            im.info["icc_profile"] = icc
+        im = to_srgb(im)
         cap = 3840 if key in FULL_BLEED else 2400
         widths = [w for w in WIDTHS if w <= min(im.width, cap)] or [im.width]
         if im.width <= cap and im.width > widths[-1] * 1.15:

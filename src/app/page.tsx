@@ -7,6 +7,7 @@ import Footer from "@/components/chrome/Footer";
 import Split from "@/components/fx/Split";
 import LivingKolam from "@/components/fx/LivingKolam";
 import AmbientVideo from "@/components/fx/AmbientVideo";
+import MotionToggle from "@/components/fx/MotionToggle";
 import { Arrow } from "@/components/brand/Icons";
 import { PLACES } from "@/lib/content";
 import { placeSrc } from "@/lib/img";
@@ -89,7 +90,8 @@ export default function Home() {
 
         {/* ── the city ── */}
         <section className="vista">
-          <div className="vista__img"><div data-parallax="8" className="vista__film"><AmbientVideo name="vista-fields" poster="/img/home/vista-poster.jpg" label="Paddy fields and coconut groves of the Kaveri delta near Thanjavur, from the air" preload="none" /></div></div>
+          <div className="vista__img"><div data-parallax="8" className="vista__film"><AmbientVideo name="vista-fields" posters={{ wide: "/img/home/vista-poster-wide.jpg", tall: "/img/home/vista-poster.jpg" }} label="Paddy fields and coconut groves of the Kaveri delta near Thanjavur, from the air" /></div></div>
+          <MotionToggle className="film-toggle film-toggle--vista" />
           <div className="vista__copy">
             <div className="wrap grid-2" style={{ alignItems: "end" }}>
               <div>

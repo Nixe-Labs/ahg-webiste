@@ -232,7 +232,7 @@
    1600,
    2400
   ],
-  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQAAWrCB4x8P9h1hoJfQEnIA/uc6HGkLYlV4FWoNhDMp5VjVeoXWo65q23kC2ol31CUkKidLDTzlc32bzMOZmJmVzJt/lGvrDazOsCYkgU+5qwAAAA=="
+  "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZQAAW4RIxGPklF0k9GkaYQAA/uc6Hbl9hNV5B/+d9cWGWw3MJSF3tS62ORHx5C8ZR4x2nlF09QAC4nSAKnuLxLVziCkmkQcAD8N7k/KK6K3Mho86c8EegAA="
  },
  "/img/explore/darasuram": {
   "w": 2400,
@@ -243,7 +243,7 @@
    1600,
    2400
   ],
-  "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JYgCdK78Aja3kQV/HN2QCQAD33YE5qukM9bj1TPd3jTHIhLoknaSEqrklPQqtmNjnFdW9NsYfpDWrGpKX0XIH6F+O/Kpt/OEq3NjmKC+baPOqRXo7Y4+Fn2FvB1zZ2CBPA4Ngqrb4AA=="
+  "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZACdABa+y+KfRZJZX1jFoAD33YE5qukM9bj1TRNReqWRDqffZwMi7Qnxkeg812ssewtzSsfUmKpNGuoT9qe15HWPzu5daHSBd39vsaoqy1A+68eyv0DkT3WUmsnvw8wqBsiCAaW5Hk44cwAAAA=="
  },
  "/img/explore/food-museum": {
   "w": 2400,
@@ -333,7 +333,7 @@
    1600,
    2400
   ],
-  "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBQCdASoYABIAPu1qr1CppaQiqAqpMB2JYwDKABEbP5NU+VTnFqnxU1EEImadoscrGaPeAAD+9CMKU4jSAVeWJnInuT/EC/ao/4A/BMjg0sV+hnyvu8REagiBgXjOD2NLjZ6gMRMq/eXpvhQT7/fotI9ws2wQVRcXPtHHVAx8tBI9mDfHBHgJP6i+v8uso6pGlRxbt5pIH9jawAA="
+  "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADQBACdASoYABIAPu1or1CppaSiqAqpMB2JQBlAAiIHT/wmAr0p36ndsOOKIAsdUAD+9CDy4/hQbMoootPATxmQ5aie+BrT5xewzXj4tXDbd/vU2ifyv9QwmOnrrVEyy6nWo7dORILex/RzIpePKsi+Y9WaJzgVgpb+P89Buc8f2TTgTls+eAuSfEuctpq6UZg6dn5IHgON5iAA"
  },
  "/img/explore/navagraha": {
   "w": 2400,
@@ -388,7 +388,7 @@
    1600,
    2400
   ],
-  "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQBACdASoYABIAPu1sq1EppaOiqAqpMB2JYwAAKYU5TIkWuIyUHpSYBoUcLytMAAD3Huo4gTpYGPUR4l3FGMVSJl+32K4ZOjCKYo9StTL3eggv8EvfvuIvfUpgCnND6PcoFdCUBnusb4O8h9QcLcmvkavxgt1knYc3p7zCmAxxuex/coRzUAAA"
+  "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwBACdASoYABIAPu1sq1EppiOiqAqpMB2JYwDCgA9excJZ7a0HVGH+dp3DikC7ZQQA9x7qOGLHDliSyD9xn5uI8L4+D0HCtgBFZ++noVcoTBNPvYK8MEGEvjgDLmNIGvk9P6+gJ1/mMqQ5CPoDjlgh/rfBm5a9YtXWXJINv8LcM+bNBbnhVtUAQ4AAAA=="
  },
  "/img/explore/samuthiram-lake": {
   "w": 2400,
@@ -510,6 +510,17 @@
    2160
   ],
   "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoNABgAPu1iqU2ppaOiMAgBMB2JaACo9BrSbhjP0B4hl5HQAAD+y+xDMW9jDG8M7u8ds9Qd916hdFl7Cc7DCKEh3CRw0X5Gl7yJspx7S32opZugAw7HUTOd9PqVTB+fUUag2MyLSrAAAA=="
+ },
+ "/img/home/vista-poster-wide": {
+  "w": 2160,
+  "h": 1214,
+  "widths": [
+   640,
+   1024,
+   1600,
+   2160
+  ],
+  "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgMYiRybxZMM2U/AAA/uNVgMa1rxFqomDqisjGJESflKMhxkrs/MDIEsp3vuDjTKQ8c7c6yLDakWHY6+Ji34a9uhXNwT6hZwc3zBp45hkeXkCVQ+B0I9hoQiWk6sGuHOTBhlRLfOJENZqsLDCSe4TBt5bToc/at14eHAIqARZAAAA="
  },
  "/img/inn/atrium": {
   "w": 3840,

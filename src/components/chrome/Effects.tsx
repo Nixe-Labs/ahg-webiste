@@ -52,7 +52,8 @@ export default function Effects() {
         });
         gsap.utils.toArray<SVGElement>("[data-draw]").forEach((el) => {
           const paths = el.querySelectorAll("path, circle, line, polyline");
-          gsap.fromTo(paths, { strokeDasharray: "1 1.02", strokeDashoffset: 1.01 }, { strokeDashoffset: 0, duration: 2.4, ease: "power2.inOut", stagger: 0.12, scrollTrigger: st(el, "top 90%") });
+          // autoRound:false, or GSAP rounds the px offset and a pathLength=1 line pops instead of drawing
+          gsap.fromTo(paths, { strokeDasharray: "1 1.02", strokeDashoffset: 1.01 }, { strokeDashoffset: 0, duration: 2.4, ease: "power2.inOut", stagger: 0.12, autoRound: false, scrollTrigger: st(el, "top 90%") });
         });
         gsap.utils.toArray<HTMLElement>("[data-scrub-words]").forEach((el) => {
           gsap.to(el.querySelectorAll(".w"), { opacity: 1, ease: "none", stagger: 0.1, scrollTrigger: { trigger: el, start: "top 78%", end: "bottom 42%", scrub: true } });

@@ -20,7 +20,7 @@ export default function HotelPage({ h }: { h: Hotel }) {
     <>
       <main data-nav="dark" className={`t-${h.theme}`}>
         <section className="phero">
-          <div className="phero__img"><Img data-parallax="6" src={h.hero} alt={`${h.name}, Thanjavur`} priority style={{ height: "112%", marginTop: "-6%" }} /></div>
+          <div className="phero__img"><Img data-parallax="6" src={h.hero} alt={`${h.name}, Thanjavur`} priority sizes="(max-aspect-ratio: 1/1) 120vh, 100vw" style={{ height: "112%", marginTop: "-6%" }} /></div>
           <div className="phero__copy">
             <div className="wrap">
               <nav className="crumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/hotels/">Hotels</Link></nav>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Arrow, Instagram, LinkedIn, Mail, Phone } from "@/components/brand/Icons";
 import Split from "@/components/fx/Split";
 import { Brand } from "./Nav";
+import MotionToggle from "@/components/fx/MotionToggle";
 import { GROUP, NAV, tel } from "@/lib/site";
 import { HOTELS } from "@/lib/hotels";
 
@@ -57,7 +58,7 @@ export default function Footer() {
 
         <div className="footer__base">
           <span>Unofficial concept preview, not affiliated with or operated by Abi&rsquo;s Hotel Group · Content &amp; hotel photography © Abi&rsquo;s Hotel Group · Official site: <a href="https://abishotels.com" target="_blank" rel="noreferrer">abishotels.com</a></span>
-          <span><Link href="/credits/">Photo &amp; film credits</Link></span>
+          <span style={{ display: "inline-flex", gap: 18 }}><Link href="/credits/">Photo &amp; film credits</Link><MotionToggle className="footer__motion" text /></span>
         </div>
       </div>
       <p className="footer__giant" aria-hidden="true">Thanjavur</p>
